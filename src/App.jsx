@@ -1,7 +1,12 @@
 import './App.css';
+import NavBar from './components/nav-var';
 
 function App() {
-	return <h1>SNGamerSpace</h1>;
+	return (
+        <>
+            <NavBar />
+        </>
+    )
 }
 
 export default App;
