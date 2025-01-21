@@ -3,18 +3,11 @@ import Logo from '../assets/logo.jsx';
 import UserIcon from '../assets/userIcon.jsx';
 
 function NavBar() {
-    const bar = document.querySelector('ul');
+    
 	function showMenu() {
-		bar.classList.toggle('barOpen');
+		const bar = document.querySelector('.navigation ul')
+		bar.classList.toggle('showMenu');
 	}
-
-    const root = document.getElementById("root");
-    if (bar.classList.contains("barOpen")) {
-        root.addEventListener("click", (even) => {
-            if(even.target != bar) {
-            bar.classList.remove("barOpen") }
-        })
-    }
 
 	return (
 		<header>
@@ -29,11 +22,12 @@ function NavBar() {
 					<li>Boutique</li>
 					<li>À propos</li>
 					<li>Contact</li>
+					<li className='registrations'>
+						<button className='login'>Connecter</button>
+						<button className='register'>S'inscrire</button>
+					</li>
 				</ul>
-				<nav className="signupAndLogin">
-					<button className="login">Connecter</button>
-					<button className="signup">{"S'inscrir"}</button>
-				</nav>
+				
 			</nav>
 		</header>
 	);
