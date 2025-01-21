@@ -37,6 +37,12 @@ header {
     aspect-ratio: 1/1;
 }
 
+.barClose {
+	fill: var(--background-color);
+	width: 1.5rem;
+    aspect-ratio: 1 / 1;
+}
+
 
 .userIcon {
 	fill: var(--background-color);
@@ -85,8 +91,9 @@ ul li {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: var(--accent-color);
+	font-weight: 700;
 }
 
 .registrations .login {

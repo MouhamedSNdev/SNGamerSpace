@@ -1,18 +1,29 @@
+import { useState } from 'react';
 import BarOpen from '../assets/barOpen.jsx';
+import BarClose from '../assets/barClose.jsx';
 import Logo from '../assets/logo.jsx';
 import UserIcon from '../assets/userIcon.jsx';
 
 function NavBar() {
-    
+
+	const [menuOpen, setMenuOpen] = useState(false);
+
 	function showMenu() {
+		setMenuOpen(true)
 		const bar = document.querySelector('.navigation ul')
-		bar.classList.toggle('showMenu');
+		bar.classList.add('showMenu');
+	}
+
+	function closeMenu() {
+		setMenuOpen(false)
+		const bar = document.querySelector('.navigation ul')
+		bar.classList.remove('showMenu');
 	}
 
 	return (
 		<header>
 			<nav className="navigation">
-				<BarOpen showMenu={showMenu} />
+				{menuOpen ? <BarClose closeMenu={closeMenu} /> : <BarOpen showMenu={showMenu} /> }
 				<Logo />
 				<UserIcon />
 				<ul>
