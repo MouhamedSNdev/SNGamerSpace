@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import BarOpen from '../assets/barOpen.jsx';
-import BarClose from '../assets/barClose.jsx';
-import Logo from '../assets/logo.jsx';
-import UserIcon from '../assets/userIcon.jsx';
+import BarOpen from '../assets/icons/barOpen.jsx';
+import BarClose from '../assets/icons/barClose.jsx';
+import Logo from '../assets/icons/logo.jsx';
+import UserIcon from '../assets/icons/userIcon.jsx';
 
 function NavBar() {
 
