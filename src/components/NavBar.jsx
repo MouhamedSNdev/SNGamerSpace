@@ -35,7 +35,7 @@ function NavBar() {
 					<li>Contact</li>
 					<li className='registrations'>
 						<button className='login'>Connecter</button>
-						<button className='register'>S'inscrire</button>
+						<button className='register'>{"S'inscrire"}</button>
 					</li>
 				</ul>
 				
