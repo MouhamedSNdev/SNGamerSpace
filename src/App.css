@@ -59,19 +59,25 @@ ul {
 	background-color: var(--primary-color);
 	position: absolute;
 	width: 100vw;
-	height: calc( 100vh - 8rem);
 	top: 4rem;
 	left: 0;
-	padding: 2rem 1rem;
 	list-style-type: none;
-	display: none;
+	display: flex;
 	flex-direction: column;
-	gap: 2rem;
-    border-top: 2px solid var(--accent-color);
+	gap: 2rem;  
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    padding: 0 1rem;
 }
 
 .showMenu {
-	display: flex;
+    padding: 2rem 1rem;
+    border-top: 2px solid var(--accent-color);
+    height: calc( 100vh - 8rem);
+    pointer-events: auto;
+    z-index: 999;
 }
 
 
@@ -98,4 +104,9 @@ ul li {
 
 .registrations .login {
     background-color: var(--background-color);
+}
+
+
+main {
+    margin-top: 5rem;
 }
