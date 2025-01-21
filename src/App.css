@@ -1,11 +1,10 @@
 :root {
-	--primary-color: #000080;
-	--secondary-color: #ffffff;
-	--primary-text-color: #000000;
-	--secondary-color: #333333;
-	--third-text-color: #808080;
-    --primary-font-family: "Roboto", sans-serif;
-    --seconday-font-family: "Opens sans", sans-serif;
+	--background-color: #fbfbfb;
+	--primary-text-color: #040316;
+	--secondary-text-color: #040316e1;
+	--primary-color: #15223e;
+	--secondary-color: #e6e6e6;
+	--accent-color: #fda312;
 }
 
 * {
@@ -15,76 +14,112 @@
 }
 
 header {
-	position: fixed;
+	background-color: var(--primary-color);
+	width: 100vw;
+	height: 4rem;
+	position: absolute;
 	top: 0;
 	right: 0;
 }
 
-header nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	padding: 1.2rem;
+.navigation {
+	width: 100%;
+	height: 100%;
+	padding: 0.5rem 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-nav img {
-	height: 4rem;
+
+.bar {
+	fill: var(--background-color);
+	height: 2rem;
+	aspect-ratio: 1/1;
 }
 
-nav svg {
-	width: 3rem;
+.bar:hover {
+	cursor: pointer;
+}
+
+.barOpen {
+	display: flex;
+}
+
+.userIcon {
+	fill: var(--background-color);
+	height: 2rem;
 	aspect-ratio: 1/1;
 }
 
 @media (min-width: 768px) {
-	nav svg {
+	.bar,
+	.userIcon {
 		display: none;
 	}
+}
 
-    ul {
-        flex-direction: row;
-    }
+.logo {
+	height: 100%;
 }
 
 ul {
-    list-style-type: none;
-    display: none;
-    flex-direction: column;
-    width: 70vh;
-    gap: 1rem;
-}
-
-@media (max-width: 768px) {
-    .menu visible {
-    position:absolute;
-    top: 4rem;
-    left: 0;
-}
-}
-
-ul li {
-    padding: .5rem;
+	background-color: var(--primary-color);
+	position: absolute;
+	width: 80vw;
+	height: 80vh;
+	top: 4rem;
+	left: 0;
+	padding: 2rem 1rem;
+	list-style-type: none;
+	display: none;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 @media (min-width: 768px) {
+	ul {
+		display: flex;
+		position: static;
+		flex-direction: row;
+		width: auto;
+		height: auto;
+		padding: 0;
+		gap:  1.5rem;
+	}
+}
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        gap: 2rem;
-        font-size: 1.1rem;
-        font-weight: 600;
-        font-family: var(--primary-font-family);
-    }
+ul li {
+	color: var(--background-color);
+	font-weight: 800;
+}
 
-    ul li:hover {
-        color: var(--primary-color);
-        cursor: pointer;
-        font-size: 1.1rem;
-        font-weight: 600;
-    }
+ul li:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--accent-color);
+}
+
+.signupAndLogin {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.signupAndLogin {
+		width: auto;
+		display: flex;
+		gap: 1rem;
+	}
+}
+
+button {
+    background-color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.login {
+    background-color: var(--background-color);
 }
