@@ -12,10 +12,10 @@ function Hero() {
 				et restez informé des dernières actualités du gaming.
 			</p>
             <div className="supportGame" >
-                <img src={pugb} alt="Une image de Pubg mobile sengal" loading="lazy" />
-                <img src={codm} alt="Une image de Call of dudy Mobile Sengal" loading="lazy" />
+                <img src={pugb} alt="Une image de Pubg mobile sengal" loading="lazy" /> 
                 <img src={freefire} alt="Une imgae de FreeFire Mobie Senegal" loading="lazy" />
                 <img src={efootball} alt="Une image de EfootBall Mobile Senegal" loading="lazy" />
+				<img src={codm} alt="Une image de Call of dudy Mobile Sengal" loading="lazy" />
             </div>
             <button>Explorer</button>
 		</section>
