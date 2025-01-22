@@ -68,8 +68,8 @@ ul {
     height: 0;
     overflow: hidden;
     pointer-events: none;
-    transition: all 0.5s ease;
-    padding: 0 1rem;
+	padding: 0 1rem;	
+    transition: all 0.3s ease; 
 }
 
 .showMenu {
