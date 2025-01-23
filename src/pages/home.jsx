@@ -1,3 +1,4 @@
+import Tournament from '../components/card';
 import Hero from '../components/hero';
 import NavBar from '../components/NavBar';
 
@@ -5,9 +6,10 @@ function Home() {
 	return (
 		<>
 			<NavBar />
-			<main>
+			{/* <main>
 				<Hero />
-			</main>
+				<Tournament />
+			</main> */}
 		</>
 	);
 }
