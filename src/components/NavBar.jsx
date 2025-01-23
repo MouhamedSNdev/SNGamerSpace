@@ -12,8 +12,9 @@ function NavBar() {
 	const menuRef = useRef(null);
 
 	function showMenu() {
-		setIsMenuOpen(true)
-		menuRef.current.classList.add(styles.header__navigation__menu__visible);
+        setIsMenuOpen(true)
+        menuRef.current.classList.add(styles.header__navigation__menu__visible);
+        
 	}
 
 	function closeMenu() {

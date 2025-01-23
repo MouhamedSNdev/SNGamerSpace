@@ -6,10 +6,10 @@ function Home() {
 	return (
 		<>
 			<NavBar />
-			{/* <main>
+			<main>
 				<Hero />
-				<Tournament />
-			</main> */}
+				{/* <Tournament /> */}
+			</main>
 		</>
 	);
 }
