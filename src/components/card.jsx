@@ -1,30 +1,5 @@
 import "../styles/card.css"
 
-
-
-function Tournament() {
-    return (
-        <section className="tournament">
-            <h2>Tournois Call Of Duty Mobile
-            </h2>
-            <div>
-                <CardTournament />
-                <CardTournament />
-                <CardTournament />
-                <CardTournament />
-                <CardTournament />
-                <CardTournament />
-                <CardTournament />
-                <CardTournament />
-                <CardTournament />
-            </div>
-        </section >
-    )
-}
-
-
-
-
 function CardTournament() {
     return (
         <article className="card">
@@ -36,4 +11,4 @@ function CardTournament() {
     )
 }
 
-export default Tournament;
+export default CardTournament;
