@@ -8,7 +8,7 @@ function Home() {
 			<NavBar />
 			<main>
 				<Hero />
-				{/* <Tournament /> */}
+				<Tournament />
 			</main>
 		</>
 	);
